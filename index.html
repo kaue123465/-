@@ -15,6 +15,7 @@
         h1 {
             color: #ff4d4d;
             font-size: 48px;
+            animation: glitch 1s infinite;
         }
         .letter {
             background-color: #222;
@@ -28,6 +29,7 @@
             line-height: 1.6;
             max-height: 70vh;
             overflow-y: auto;
+            position: relative;
         }
         .footer {
             position: fixed;
@@ -36,6 +38,53 @@
             transform: translateX(-50%);
             color: #888;
             font-size: 12px;
+        }
+
+        @keyframes glitch {
+            0% {
+                text-shadow: 2px 2px 5px #ff0000, -2px -2px 5px #00ff00, 2px 2px 5px #0000ff;
+                transform: skew(0.4deg);
+            }
+            10% {
+                text-shadow: -2px -2px 5px #ff0000, 2px 2px 5px #00ff00, -2px -2px 5px #0000ff;
+                transform: skew(-0.3deg);
+            }
+            20% {
+                text-shadow: 2px 2px 5px #ff0000, -2px -2px 5px #00ff00, 2px 2px 5px #0000ff;
+                transform: skew(0.2deg);
+            }
+            30% {
+                text-shadow: -2px -2px 5px #ff0000, 2px 2px 5px #00ff00, -2px -2px 5px #0000ff;
+                transform: skew(-0.5deg);
+            }
+            40% {
+                text-shadow: 2px 2px 5px #ff0000, -2px -2px 5px #00ff00, 2px 2px 5px #0000ff;
+                transform: skew(0.1deg);
+            }
+            50% {
+                text-shadow: -2px -2px 5px #ff0000, 2px 2px 5px #00ff00, -2px -2px 5px #0000ff;
+                transform: skew(-0.4deg);
+            }
+            60% {
+                text-shadow: 2px 2px 5px #ff0000, -2px -2px 5px #00ff00, 2px 2px 5px #0000ff;
+                transform: skew(0.3deg);
+            }
+            70% {
+                text-shadow: -2px -2px 5px #ff0000, 2px 2px 5px #00ff00, -2px -2px 5px #0000ff;
+                transform: skew(-0.2deg);
+            }
+            80% {
+                text-shadow: 2px 2px 5px #ff0000, -2px -2px 5px #00ff00, 2px 2px 5px #0000ff;
+                transform: skew(0.4deg);
+            }
+            90% {
+                text-shadow: -2px -2px 5px #ff0000, 2px 2px 5px #00ff00, -2px -2px 5px #0000ff;
+                transform: skew(-0.3deg);
+            }
+            100% {
+                text-shadow: 2px 2px 5px #ff0000, -2px -2px 5px #00ff00, 2px 2px 5px #0000ff;
+                transform: skew(0.2deg);
+            }
         }
     </style>
 </head>
