@@ -1,32 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>RGB Guilherme</title>
-  <style>
-    body {
-      background-color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    h1 {
-      font-size: 50px;
-      font-weight: bold;
-      animation: colorChange 3s infinite;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Euphoria</title>
+    <style>
+        body {
+            background-color: #111;
+            color: #e0e0e0;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff4d4d;
+            font-size: 48px;
+            animation: glitch 1s infinite;
+        }
+        .letter {
+            background-color: #222;
+            border: 1px solid #444;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            margin: 0 auto;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+            font-size: 18px;
+            line-height: 1.6;
+            max-height: 70vh;
+            overflow-y: auto;
+            position: relative;
+        }
+        .footer {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #888;
+            font-size: 12px;
+        }
 
-    @keyframes colorChange {
-      0%   { color: red; }
-      33%  { color: green; }
-      66%  { color: blue; }
-      100% { color: red; }
-    }
-  </style>
+        @keyframes glitch {
+            0% {
+                text-shadow: 2px 2px 5px #ff0000, -2px -2px 5px #00ff00, 2px 2px 5px #0000ff;
+                transform: skew(0.4deg);
+            }
+            10% {
+                text-shadow: -2px -2px 5px #ff0000, 2px 2px 5px #00ff00, -2px -2px 5px #0000ff;
+                transform: skew(-0.3deg);
+            }
+            20% {
+                text-shadow: 2px 2px 5px #ff0000, -2px -2px 5px #00ff00, 2px 2px 5px #0000ff;
+                transform: skew(0.2deg);
+            }
+            30% {
+                text-shadow: -2px -2px 5px #ff0000, 2px 2px 5px #00ff00, -2px -2px 5px #0000ff;
+                transform: skew(-0.5deg);
+            }
+            40% {
+                text-shadow: 2px 2px 5px #ff0000, -2px -2px 5px #00ff00, 2px 2px 5px #0000ff;
+                transform: skew(0.1deg);
+            }
+            50% {
+                text-shadow: -2px -2px 5px #ff0000, 2px 2px 5px #00ff00, -2px -2px 5px #0000ff;
+                transform: skew(-0.4deg);
+            }
+            60% {
+                text-shadow: 2px 2px 5px #ff0000, -2px -2px 5px #00ff00, 2px 2px 5px #0000ff;
+                transform: skew(0.3deg);
+            }
+            70% {
+                text-shadow: -2px -2px 5px #ff0000, 2px 2px 5px #00ff00, -2px -2px 5px #0000ff;
+                transform: skew(-0.2deg);
+            }
+            80% {
+                text-shadow: 2px 2px 5px #ff0000, -2px -2px 5px #00ff00, 2px 2px 5px #0000ff;
+                transform: skew(0.4deg);
+            }
+            90% {
+                text-shadow: -2px -2px 5px #ff0000, 2px 2px 5px #00ff00, -2px -2px 5px #0000ff;
+                transform: skew(-0.3deg);
+            }
+            100% {
+                text-shadow: 2px 2px 5px #ff0000, -2px -2px 5px #00ff00, 2px 2px 5px #0000ff;
+                transform: skew(0.2deg);
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>GUILHERME É GAY</h1>
+
+    <h1>Bem-vindo ao Projeto Euphoria</h1>
+
+    <div class="letter">
+        <p>[ Carta Oficial - Projeto Euphoria ]</p>
+        <p>Prezado(a) participante,</p>
+        <p>Se você está lendo esta carta, então você é um dos poucos selecionados para participar de um estudo revolucionário na ciência das memórias e da identidade humana. O Projeto <strong>Euphoria</strong> foi idealizado para investigar os limites da mente humana, visando uma solução para o Alzheimer e outras doenças relacionadas à perda de memória...</p>
+        <p>O objetivo do Projeto <strong>Euphoria</strong> é claro: restaurar as memórias dos pacientes e possibilitar a recuperação da identidade perdida. Contudo, para alcançar este objetivo, o tratamento requer um processo não convencional que explora profundamente os aspectos mais sensíveis da memória humana...</p>
+        <p>Por favor, note que sua participação é crucial. Caso decida prosseguir, você será integrado a um grupo de estudos pioneiro. Caso contrário, sua memória sobre o Projeto será apagada de forma segura, preservando seu bem-estar e a confidencialidade do processo.</p>
+        <p>Atenciosamente,</p>
+        <p><strong>Equipe Projeto Euphoria</strong></p>
+        <p>[ Assinatura Dr. Elias Vale ]</p>
+    </div>
+
+    <div class="footer">
+        <p>Projeto Euphoria - 2025</p>
+    </div>
+
 </body>
 </html>
